@@ -126,17 +126,8 @@
                     <td>
                         <div class="three fields m-0">
                             <div class="field">
-                                <label>ដំឡើងថ្នាក់ចុងក្រោយ</label>
-                                <div class="ui calendar" id="d_step_1">
-                                    <div class="ui input left icon">
-                                        <i class="calendar icon"></i>
-                                        <input type="text" name="last_appointment" placeholder="ដំឡើងថ្នាក់ចុងក្រោយ">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field">
                                 <label>ចូលបម្រើការងាររដ្ឋ</label>
-                                <div class="ui calendar" id="d_step_2">
+                                <div class="ui calendar" id="d_step_1">
                                     <div class="ui input left icon">
                                         <i class="calendar icon"></i>
                                         <input type="text" name="start_work" placeholder="ចូលបម្រើការងាររដ្ឋ">
@@ -145,10 +136,19 @@
                             </div>
                             <div class="field">
                                 <label>តែងតាំងស៊ប់</label>
-                                <div class="ui calendar" id="d_step_3">
+                                <div class="ui calendar" id="d_step_2">
                                     <div class="ui input left icon">
                                         <i class="calendar icon"></i>
                                         <input type="text" name="real_appointment" placeholder="តែងតាំងស៊ប់">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>ដំឡើងថ្នាក់ចុងក្រោយ</label>
+                                <div class="ui calendar" id="d_step_3">
+                                    <div class="ui input left icon">
+                                        <i class="calendar icon"></i>
+                                        <input type="text" name="last_appointment" placeholder="តែងតាំងស៊ប់">
                                     </div>
                                 </div>
                             </div>
@@ -368,7 +368,7 @@
                                     <div class="ui calendar" id="edu_start">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input class="doctor_nan_able" name="doctor[start_date]" type="text"
+                                            <input value="{{\Carbon\Carbon::now()}}" name="doctor[start_date]" type="text"
                                                    placeholder="ថ្ងៃខែឆ្នាំចាប់ផ្តើម">
                                         </div>
                                     </div>
@@ -377,7 +377,7 @@
                                     <div class="ui calendar" id="edu_end">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input class="doctor_nan_able" name="doctor[end_date]" type="text"
+                                            <input value="{{\Carbon\Carbon::now()}}" name="doctor[end_date]" type="text"
                                                    placeholder="ថ្ងៃខែឆ្នាំបញ្ចប់">
                                         </div>
                                     </div>
@@ -425,7 +425,7 @@
                                     <div class="ui calendar" id="family_date">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input type="text" name="spouse[dob]"
+                                            <input type="text" value="{{\Carbon\Carbon::now()}}" name="spouse[dob]"
                                                    placeholder="ថ្ងៃខែឆ្នាំកំណើត">
                                         </div>
                                     </div>
@@ -466,7 +466,7 @@
                                     <div class="ui calendar" id="family_date">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input id="child_dob" type="text"
+                                            <input id="child_dob" type="text" value="{{\Carbon\Carbon::now()}}"
                                                    name="children[0][dob]" placeholder="ថ្ងៃខែឆ្នាំកំណើត">
                                         </div>
                                     </div>
@@ -545,7 +545,7 @@
                                         <span class="ui teal button">
                                             <i class="paperclip icon"></i>
                                         </span>
-                                        <input id="thumbnail_relax" class="relax_nan_able" type="text" name="relax[attachment]">
+                                        <input id="thumbnail_relax" value="na" class="relax_nan_able" type="text" name="relax[attachment]">
                                     </div>
                                     <img id="relax_holder" style="margin-top:15px;max-height:100px;">
                                 </div>
@@ -553,7 +553,7 @@
                                     <div class="ui calendar" id="single_date">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input class="relax_nan_able" name="relax[attachment_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំលិខិតអនុញ្ញាត">
+                                            <input class="relax_nan_able" value="{{\Carbon\Carbon::now()}}" name="relax[attachment_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំលិខិតអនុញ្ញាត">
                                         </div>
                                     </div>
                                 </div>
@@ -563,7 +563,7 @@
                                     <div class="ui calendar" id="relax_start">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input class="relax_nan_able" name="relax[start_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំចាប់ផ្តើម">
+                                            <input class="relax_nan_able" value="{{\Carbon\Carbon::now()}}" name="relax[start_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំចាប់ផ្តើម">
                                         </div>
                                     </div>
                                 </div>
@@ -571,7 +571,7 @@
                                     <div class="ui calendar" id="relax_end">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input class="relax_nan_able" name="relax[end_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំបញ្ចប់">
+                                            <input class="relax_nan_able" value="{{\Carbon\Carbon::now()}}" name="relax[end_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំបញ្ចប់">
                                         </div>
                                     </div>
                                 </div>
@@ -595,7 +595,7 @@
                                         <span class="ui teal button">
                                             <i class="paperclip icon"></i>
                                         </span>
-                                        <input id="thumbnail_contiStudy" type="text" name="contiStudy[attachment]">
+                                        <input id="thumbnail_contiStudy" value="na" type="text" name="contiStudy[attachment]">
                                     </div>
                                     <img id="contiStudy_holder" style="margin-top:15px;max-height:100px;">
                                 </div>
@@ -603,7 +603,7 @@
                                     <div class="ui calendar" id="single_date">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input name="contiStudy[attachment_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំលិខិតអនុញ្ញាត">
+                                            <input name="contiStudy[attachment_date]" value="{{\Carbon\Carbon::now()}}" type="text" placeholder="ថ្ងៃខែឆ្នាំលិខិតអនុញ្ញាត">
                                         </div>
                                     </div>
                                 </div>
@@ -613,7 +613,7 @@
                                     <div class="ui calendar" id="contiStudy_start">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input name="contiStudy[start_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំចាប់ផ្តើម">
+                                            <input name="contiStudy[start_date]" value="{{\Carbon\Carbon::now()}}" type="text" placeholder="ថ្ងៃខែឆ្នាំចាប់ផ្តើម">
                                         </div>
                                     </div>
                                 </div>
@@ -621,7 +621,7 @@
                                     <div class="ui calendar" id="contiStudy_end">
                                         <div class="ui input left icon">
                                             <i class="calendar icon"></i>
-                                            <input name="contiStudy[end_date]" type="text" placeholder="ថ្ងៃខែឆ្នាំបញ្ចប់">
+                                            <input name="contiStudy[end_date]" value="{{\Carbon\Carbon::now()}}" type="text" placeholder="ថ្ងៃខែឆ្នាំបញ្ចប់">
                                         </div>
                                     </div>
                                 </div>
@@ -674,6 +674,7 @@
                             relax_min_max.days += new Date(relax_min_max.now.getFullYear(),relax_min_max.now.getMonth()+i,0).getDate();
                         }
                         $(relax_min_max.end_date).calendar({
+                            type: 'date',
                             type: 'date',
                             startCalendar: $(relax_min_max.start_date),
                             maxDate: new Date(relax_min_max.now.getFullYear(), relax_min_max.now.getMonth(), relax_min_max.now.getDate() + relax_min_max.days)
