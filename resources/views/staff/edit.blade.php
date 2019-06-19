@@ -132,32 +132,29 @@
                     <td>
                         <div class="three fields m-0">
                             <div class="field">
-                                <label>ដំឡើងថ្នាក់ចុងក្រោយ</label>
+                                <label>ចូលបម្រើការងាររដ្ឋ</label>
                                 <div class="ui calendar" id="d_step_1">
                                     <div class="ui input left icon">
                                         <i class="calendar icon"></i>
-                                        <input type="text" value="{{$staff->last_appointment}}" name="last_appointment"
-                                               placeholder="ដំឡើងថ្នាក់ចុងក្រោយ">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <label>ចូលបម្រើការងាររដ្ឋ</label>
-                                <div class="ui calendar" id="d_step_2">
-                                    <div class="ui input left icon">
-                                        <i class="calendar icon"></i>
-                                        <input type="text" value="{{$staff->start_work}}" name="start_work"
-                                               placeholder="ចូលបម្រើការងាររដ្ឋ">
+                                        <input type="text" value="{{$staff->start_work}}" name="start_work" placeholder="ចូលបម្រើការងាររដ្ឋ">
                                     </div>
                                 </div>
                             </div>
                             <div class="field">
                                 <label>តែងតាំងស៊ប់</label>
+                                <div class="ui calendar" id="d_step_2">
+                                    <div class="ui input left icon">
+                                        <i class="calendar icon"></i>
+                                        <input type="text" value="{{$staff->real_appoint}}" name="real_appointment" placeholder="តែងតាំងស៊ប់">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>ដំឡើងថ្នាក់ចុងក្រោយ</label>
                                 <div class="ui calendar" id="d_step_3">
                                     <div class="ui input left icon">
                                         <i class="calendar icon"></i>
-                                        <input type="text" value="{{$staff->real_appoint}}" name="real_appointment"
-                                               placeholder="តែងតាំងស៊ប់">
+                                        <input type="text" value="{{$staff->last_appointment}}" name="last_appointment" placeholder="តែងតាំងស៊ប់">
                                     </div>
                                 </div>
                             </div>
