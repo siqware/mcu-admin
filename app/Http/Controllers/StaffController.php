@@ -118,6 +118,7 @@ class StaffController extends Controller
         $generalInfo->profile_picture = $input['profile_picture'];
         $generalInfo->gov_official_no = $input['gov_official_no'];
         $generalInfo->khmer_name = $input['khmer_name'];
+        $generalInfo->salary_position = $input['salary_position'];
         $generalInfo->latin_name = $input['latin_name'];
         $generalInfo->gender = $input['gender'];
         $generalInfo->dob = $input['dob'];
@@ -246,6 +247,7 @@ class StaffController extends Controller
         $generalInfo->gov_official_no = $input['gov_official_no'];
         $generalInfo->khmer_name = $input['khmer_name'];
         $generalInfo->latin_name = $input['latin_name'];
+        $generalInfo->salary_position = $input['salary_position'];
         $generalInfo->gender = $input['gender'];
         $generalInfo->dob = $input['dob'];
         $generalInfo->id_no = $input['id_no'];

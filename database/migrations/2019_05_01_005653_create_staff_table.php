@@ -23,6 +23,7 @@ class CreateStaffTable extends Migration
             $table->string('dob');
             $table->string('id_no');
             $table->string('bank_acc_no');
+            $table->string('salary_position');
             $table->string('last_appointment');
             $table->string('start_work');
             $table->string('real_appoint');

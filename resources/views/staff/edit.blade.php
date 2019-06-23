@@ -128,15 +128,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="right aligned">ថ្ងៃខែឆ្នាំ</td>
+                    <td class="right aligned"></td>
                     <td>
-                        <div class="three fields m-0">
+                        <div class="four fields m-0">
                             <div class="field">
                                 <label>ចូលបម្រើការងាររដ្ឋ</label>
                                 <div class="ui calendar" id="d_step_1">
                                     <div class="ui input left icon">
                                         <i class="calendar icon"></i>
-                                        <input type="text" value="{{$staff->start_work}}" name="start_work" placeholder="ចូលបម្រើការងាររដ្ឋ">
+                                        <input type="text" name="start_work" value="{{$staff->start_work}}" placeholder="ចូលបម្រើការងាររដ្ឋ">
                                     </div>
                                 </div>
                             </div>
@@ -145,7 +145,7 @@
                                 <div class="ui calendar" id="d_step_2">
                                     <div class="ui input left icon">
                                         <i class="calendar icon"></i>
-                                        <input type="text" value="{{$staff->real_appoint}}" name="real_appointment" placeholder="តែងតាំងស៊ប់">
+                                        <input type="text" name="real_appointment" value="{{$staff->real_appoint}}" placeholder="តែងតាំងស៊ប់">
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +154,63 @@
                                 <div class="ui calendar" id="d_step_3">
                                     <div class="ui input left icon">
                                         <i class="calendar icon"></i>
-                                        <input type="text" value="{{$staff->last_appointment}}" name="last_appointment" placeholder="តែងតាំងស៊ប់">
+                                        <input type="text" name="last_appointment" value="{{$staff->last_appointment}}" placeholder="ដំឡើងថ្នាក់ចុងក្រោយ">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>ប្រភេទកាំប្រាក់</label>
+                                <div class="ui selection dropdown" tabindex="0">
+                                    <input name="salary_position" type="hidden" value="{{$staff->salary_position}}" placeholder="ប្រភេទកាំប្រាក់">
+                                    <div class="default text">ប្រភេទកាំប្រាក់</div>
+                                    <i class="dropdown icon"></i>
+                                    <div class="menu" tabindex="-1">
+                                        <div class="item" data-value="ក១.១">ក១.១</div>
+                                        <div class="item" data-value="ក១.២">ក១.២</div>
+                                        <div class="item" data-value="ក១.៣">ក១.៣</div>
+                                        <div class="item" data-value="ក១.៤">ក១.៤</div>
+                                        <div class="item" data-value="ក១.៥">ក១.៥</div>
+                                        <div class="item" data-value="ក១.៦">ក១.៦</div>
+
+                                        <div class="item" data-value="ក២.១">ក២.១</div>
+                                        <div class="item" data-value="ក២.២">ក២.២</div>
+                                        <div class="item" data-value="ក២.៣">ក២.៣</div>
+                                        <div class="item" data-value="ក២.៤">ក២.៤</div>
+
+                                        <div class="item" data-value="ក៣.១">ក៣.១</div>
+                                        <div class="item" data-value="ក៣.២">ក៣.២</div>
+                                        <div class="item" data-value="ក៣.៣">ក៣.៣</div>
+                                        <div class="item" data-value="ក៣.៤">ក៣.៤</div>
+
+                                        <div class="item" data-value="ខ១.១">ខ១.១</div>
+                                        <div class="item" data-value="ខ១.២">ខ១.២</div>
+                                        <div class="item" data-value="ខ១.៣">ខ១.៣</div>
+                                        <div class="item" data-value="ខ១.៤">ខ១.៤</div>
+                                        <div class="item" data-value="ខ១.៥">ខ១.៥</div>
+                                        <div class="item" data-value="ខ១.៦">ខ១.៦</div>
+
+                                        <div class="item" data-value="ខ២.១">ខ២.១</div>
+                                        <div class="item" data-value="ខ២.២">ខ២.២</div>
+                                        <div class="item" data-value="ខ២.៣">ខ២.៣</div>
+                                        <div class="item" data-value="ខ២.៤">ខ២.៤</div>
+
+                                        <div class="item" data-value="ខ៣.១">ខ៣.១</div>
+                                        <div class="item" data-value="ខ៣.២">ខ៣.២</div>
+                                        <div class="item" data-value="ខ៣.៣">ខ៣.៣</div>
+                                        <div class="item" data-value="ខ៣.៤">ខ៣.៤</div>
+                                        <div class="item" data-value="ខ៣.៥">ខ៣.៥</div>
+                                        <div class="item" data-value="ខ៣.៦">ខ៣.៦</div>
+
+                                        <div class="item" data-value="គ១.១">គ១.១</div>
+                                        <div class="item" data-value="គ១.២">គ១.២</div>
+                                        <div class="item" data-value="គ១.៣">គ១.៣</div>
+                                        <div class="item" data-value="គ១.៤">គ១.៤</div>
+                                        <div class="item" data-value="គ១.៥">គ១.៥</div>
+                                        <div class="item" data-value="គ១.៦">គ១.៦</div>
+                                        <div class="item" data-value="គ១.៧">គ១.៧</div>
+                                        <div class="item" data-value="គ១.៨">គ១.៨</div>
+                                        <div class="item" data-value="គ១.៩">គ១.៩</div>
+                                        <div class="item" data-value="គ១.១០">គ១.១០</div>
                                     </div>
                                 </div>
                             </div>

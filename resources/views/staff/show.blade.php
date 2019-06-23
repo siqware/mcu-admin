@@ -83,18 +83,27 @@
                                 <td>លេខគណនីធនាគារ</td>
                                 <td>{{$staff->bank_acc_no}}</td>
                             </tr>
-                            <tr>
-                                <td>ថ្ងៃខែឆ្នាំដំឡើងថ្នាក់ចុងក្រោយ</td>
-                                <td>{{$staff->last_appointment}}</td>
-                            </tr>
+
                             <tr>
                                 <td>ថ្ងៃខែឆ្នាំចូលបម្រើការងាររដ្ឋ</td>
                                 <td>{{$staff->start_work}}</td>
                             </tr>
+
                             <tr>
                                 <td>ថ្ងៃខែឆ្នាំតែងតាំងស៊ប់</td>
                                 <td>{{$staff->real_appoint}}</td>
                             </tr>
+
+                            <tr>
+                                <td>ថ្ងៃខែឆ្នាំដំឡើងថ្នាក់ចុងក្រោយ</td>
+                                <td>{{$staff->last_appointment}}</td>
+                            </tr>
+
+                            <tr>
+                                <td>ប្រភេទកាំប្រាក់</td>
+                                <td>{{$staff->salary_position}}</td>
+                            </tr>
+
                             <tr>
                                 <td>អ៊ីម៉ែ់ល</td>
                                 <td>{{$staff->email}}</td>
